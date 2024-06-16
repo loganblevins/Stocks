@@ -42,6 +42,7 @@ struct ContentView: View {
     private var populatedView: some View {
         List(viewModel.sortedStocks, id: \.ticker) { stock in
             RowView(stock: stock)
+                .contentShape(Rectangle())
                 .onTapGesture {
                     router.push(.stockDetail(stock: stock))
                 }
