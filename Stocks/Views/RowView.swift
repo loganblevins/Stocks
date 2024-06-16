@@ -14,25 +14,25 @@ struct RowView: View {
 
     var body: some View {
         HStack(spacing: 0) {
-            VStack(alignment: .listRowSeparatorLeading) {
+            VStack(alignment: .leading) {
                 Text(stock.ticker)
-                    .font(.title)
+                    .font(.title2)
                     .bold()
 
                 Text(stock.name)
                     .font(.headline)
                     .fontWeight(.light)
+                    .lineLimit(nil)
+                    .multilineTextAlignment(.leading)
             }
-            .padding()
-
-            Spacer(minLength: 0)
+            .frame(maxWidth: .infinity, alignment: .leading)
 
             Text(stock.currentPriceCents, format: .currency(code: stock.currency).scale(0.01))
                 .font(.title3)
+                .fixedSize()
+                .frame(maxWidth: .infinity)
 
-            Spacer(minLength: 0)
-
-            VStack(alignment: .listRowSeparatorTrailing) {
+            VStack(alignment: .trailing) {
                 Text("\(stock.quantity ?? 0)")
                     .font(.callout)
                     .fontWeight(.light)
@@ -40,9 +40,11 @@ struct RowView: View {
                 Text(stock.currentPriceCents * (stock.quantity ?? 0), format: .currency(code: stock.currency).scale(0.01))
                     .font(.title3)
             }
-            .padding()
+            .fixedSize()
+            .frame(maxWidth: .infinity, alignment: .trailing)
+
         }
-        .frame(height: 50)
+        .lineLimit(1)
     }
 }
 
