@@ -30,4 +30,8 @@ struct Stock: Codable {
         case quantity
         case currentPriceTimestamp = "current_price_timestamp"
     }
+
+    var holdingsPriceCents: Int {
+        currentPriceCents * (quantity ?? 0)
+    }
 }

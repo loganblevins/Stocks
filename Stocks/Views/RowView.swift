@@ -37,7 +37,7 @@ struct RowView: View {
                     .font(.callout)
                     .fontWeight(.light)
 
-                Text(stock.currentPriceCents * (stock.quantity ?? 0), format: .currency(code: stock.currency).scale(0.01))
+                Text(stock.holdingsPriceCents, format: .currency(code: stock.currency).scale(0.01))
                     .font(.title3)
             }
             .fixedSize()
