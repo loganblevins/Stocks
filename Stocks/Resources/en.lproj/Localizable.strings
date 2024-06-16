@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Stocks
+
+  Created by Logan Blevins on 6/16/24.
+  
+*/
+
+"HomeView.message.empty" = "Nothing to see here!";
+"HomeView.button.refresh" = "*Try again?*";
+"HomeView.title" = "Stocks";
+
+"DataStoreError.badUrl" = "Oops! Looks like %@ isn't a valid URL";
+"DataStoreError.transport" = "Something isn't right: %@";
+"DataStoreError.unknown" = "Looks like we hit a snag...try again?";

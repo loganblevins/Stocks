@@ -12,20 +12,15 @@
 		CB531DC22C1F6F50001D4A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB531DC12C1F6F50001D4A09 /* Assets.xcassets */; };
 		CB531DC52C1F6F50001D4A09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB531DC42C1F6F50001D4A09 /* Preview Assets.xcassets */; };
 		CB531DCF2C1F6F50001D4A09 /* StocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DCE2C1F6F50001D4A09 /* StocksTests.swift */; };
-		CB531DD92C1F6F50001D4A09 /* StocksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DD82C1F6F50001D4A09 /* StocksUITests.swift */; };
-		CB531DDB2C1F6F50001D4A09 /* StocksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DDA2C1F6F50001D4A09 /* StocksUITestsLaunchTests.swift */; };
 		CB531DEC2C1F717E001D4A09 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DEB2C1F717E001D4A09 /* Portfolio.swift */; };
+		CB531DEE2C1F7442001D4A09 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DED2C1F7442001D4A09 /* DataStore.swift */; };
+		CB531DF02C1F74A5001D4A09 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = CB531DEF2C1F74A5001D4A09 /* swiftgen.yml */; };
+		CB531DFA2C1F7C0F001D4A09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB531DF82C1F7C0F001D4A09 /* Localizable.strings */; };
+		CB531DFC2C1F7C81001D4A09 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DFB2C1F7C81001D4A09 /* L10n.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CB531DCB2C1F6F50001D4A09 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB531DB22C1F6F4F001D4A09 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB531DB92C1F6F4F001D4A09;
-			remoteInfo = Stocks;
-		};
-		CB531DD52C1F6F50001D4A09 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB531DB22C1F6F4F001D4A09 /* Project object */;
 			proxyType = 1;
@@ -42,10 +37,11 @@
 		CB531DC42C1F6F50001D4A09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB531DCA2C1F6F50001D4A09 /* StocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB531DCE2C1F6F50001D4A09 /* StocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTests.swift; sourceTree = "<group>"; };
-		CB531DD42C1F6F50001D4A09 /* StocksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB531DD82C1F6F50001D4A09 /* StocksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksUITests.swift; sourceTree = "<group>"; };
-		CB531DDA2C1F6F50001D4A09 /* StocksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB531DEB2C1F717E001D4A09 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		CB531DED2C1F7442001D4A09 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		CB531DEF2C1F74A5001D4A09 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		CB531DF92C1F7C0F001D4A09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB531DFB2C1F7C81001D4A09 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,22 +59,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB531DD12C1F6F50001D4A09 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CB531DB12C1F6F4F001D4A09 = {
 			isa = PBXGroup;
 			children = (
+				CB531DEF2C1F74A5001D4A09 /* swiftgen.yml */,
 				CB531DBC2C1F6F4F001D4A09 /* Stocks */,
 				CB531DCD2C1F6F50001D4A09 /* StocksTests */,
-				CB531DD72C1F6F50001D4A09 /* StocksUITests */,
 				CB531DBB2C1F6F4F001D4A09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,7 +77,6 @@
 			children = (
 				CB531DBA2C1F6F4F001D4A09 /* Stocks.app */,
 				CB531DCA2C1F6F50001D4A09 /* StocksTests.xctest */,
-				CB531DD42C1F6F50001D4A09 /* StocksUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +90,8 @@
 				CB531DE72C1F7083001D4A09 /* Models */,
 				CB531DBD2C1F6F4F001D4A09 /* StocksApp.swift */,
 				CB531DBF2C1F6F4F001D4A09 /* ContentView.swift */,
-				CB531DC12C1F6F50001D4A09 /* Assets.xcassets */,
+				CB531DFB2C1F7C81001D4A09 /* L10n.swift */,
+				CB531DF72C1F7B67001D4A09 /* Resources */,
 				CB531DC32C1F6F50001D4A09 /* Preview Content */,
 			);
 			path = Stocks;
@@ -122,15 +111,6 @@
 				CB531DCE2C1F6F50001D4A09 /* StocksTests.swift */,
 			);
 			path = StocksTests;
-			sourceTree = "<group>";
-		};
-		CB531DD72C1F6F50001D4A09 /* StocksUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CB531DD82C1F6F50001D4A09 /* StocksUITests.swift */,
-				CB531DDA2C1F6F50001D4A09 /* StocksUITestsLaunchTests.swift */,
-			);
-			path = StocksUITests;
 			sourceTree = "<group>";
 		};
 		CB531DE72C1F7083001D4A09 /* Models */ = {
@@ -158,8 +138,18 @@
 		CB531DEA2C1F709D001D4A09 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CB531DED2C1F7442001D4A09 /* DataStore.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		CB531DF72C1F7B67001D4A09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB531DF82C1F7C0F001D4A09 /* Localizable.strings */,
+				CB531DC12C1F6F50001D4A09 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,24 +190,6 @@
 			productReference = CB531DCA2C1F6F50001D4A09 /* StocksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CB531DD32C1F6F50001D4A09 /* StocksUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB531DE42C1F6F50001D4A09 /* Build configuration list for PBXNativeTarget "StocksUITests" */;
-			buildPhases = (
-				CB531DD02C1F6F50001D4A09 /* Sources */,
-				CB531DD12C1F6F50001D4A09 /* Frameworks */,
-				CB531DD22C1F6F50001D4A09 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB531DD62C1F6F50001D4A09 /* PBXTargetDependency */,
-			);
-			name = StocksUITests;
-			productName = StocksUITests;
-			productReference = CB531DD42C1F6F50001D4A09 /* StocksUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,10 +204,6 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					CB531DC92C1F6F50001D4A09 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = CB531DB92C1F6F4F001D4A09;
-					};
-					CB531DD32C1F6F50001D4A09 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = CB531DB92C1F6F4F001D4A09;
 					};
@@ -256,7 +224,6 @@
 			targets = (
 				CB531DB92C1F6F4F001D4A09 /* Stocks */,
 				CB531DC92C1F6F50001D4A09 /* StocksTests */,
-				CB531DD32C1F6F50001D4A09 /* StocksUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,18 +234,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB531DC52C1F6F50001D4A09 /* Preview Assets.xcassets in Resources */,
+				CB531DFA2C1F7C0F001D4A09 /* Localizable.strings in Resources */,
 				CB531DC22C1F6F50001D4A09 /* Assets.xcassets in Resources */,
+				CB531DF02C1F74A5001D4A09 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CB531DC82C1F6F50001D4A09 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB531DD22C1F6F50001D4A09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,8 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB531DEC2C1F717E001D4A09 /* Portfolio.swift in Sources */,
+				CB531DEE2C1F7442001D4A09 /* DataStore.swift in Sources */,
 				CB531DC02C1F6F4F001D4A09 /* ContentView.swift in Sources */,
 				CB531DBE2C1F6F4F001D4A09 /* StocksApp.swift in Sources */,
+				CB531DFC2C1F7C81001D4A09 /* L10n.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,15 +270,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB531DD02C1F6F50001D4A09 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB531DD92C1F6F50001D4A09 /* StocksUITests.swift in Sources */,
-				CB531DDB2C1F6F50001D4A09 /* StocksUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -323,12 +278,18 @@
 			target = CB531DB92C1F6F4F001D4A09 /* Stocks */;
 			targetProxy = CB531DCB2C1F6F50001D4A09 /* PBXContainerItemProxy */;
 		};
-		CB531DD62C1F6F50001D4A09 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB531DB92C1F6F4F001D4A09 /* Stocks */;
-			targetProxy = CB531DD52C1F6F50001D4A09 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB531DF82C1F7C0F001D4A09 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB531DF92C1F7C0F001D4A09 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CB531DDC2C1F6F50001D4A09 /* Debug */ = {
@@ -558,42 +519,6 @@
 			};
 			name = Release;
 		};
-		CB531DE52C1F6F50001D4A09 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WFF682FMR6;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.loganblevins.StocksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Stocks;
-			};
-			name = Debug;
-		};
-		CB531DE62C1F6F50001D4A09 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WFF682FMR6;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.loganblevins.StocksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Stocks;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -620,15 +545,6 @@
 			buildConfigurations = (
 				CB531DE22C1F6F50001D4A09 /* Debug */,
 				CB531DE32C1F6F50001D4A09 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB531DE42C1F6F50001D4A09 /* Build configuration list for PBXNativeTarget "StocksUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB531DE52C1F6F50001D4A09 /* Debug */,
-				CB531DE62C1F6F50001D4A09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

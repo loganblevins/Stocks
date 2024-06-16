@@ -1,0 +1,9 @@
+input_dir: Stocks/Resources/
+output_dir: Stocks/
+
+strings:
+    inputs:
+     - en.lproj/Localizable.strings
+    outputs:
+     - templateName: structured-swift5
+       output: L10n.swift
