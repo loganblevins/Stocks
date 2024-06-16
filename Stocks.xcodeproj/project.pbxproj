@@ -17,6 +17,7 @@
 		CB531DF02C1F74A5001D4A09 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = CB531DEF2C1F74A5001D4A09 /* swiftgen.yml */; };
 		CB531DFA2C1F7C0F001D4A09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB531DF82C1F7C0F001D4A09 /* Localizable.strings */; };
 		CB531DFC2C1F7C81001D4A09 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DFB2C1F7C81001D4A09 /* L10n.swift */; };
+		CB531E032C1F801C001D4A09 /* Navigation in Frameworks */ = {isa = PBXBuildFile; productRef = CB531E022C1F801C001D4A09 /* Navigation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		CB531DEF2C1F74A5001D4A09 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		CB531DF92C1F7C0F001D4A09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CB531DFB2C1F7C81001D4A09 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		CB531DFD2C1F7FB2001D4A09 /* Navigation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Navigation; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB531E032C1F801C001D4A09 /* Navigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,10 +68,12 @@
 		CB531DB12C1F6F4F001D4A09 = {
 			isa = PBXGroup;
 			children = (
+				CB531DFD2C1F7FB2001D4A09 /* Navigation */,
 				CB531DEF2C1F74A5001D4A09 /* swiftgen.yml */,
 				CB531DBC2C1F6F4F001D4A09 /* Stocks */,
 				CB531DCD2C1F6F50001D4A09 /* StocksTests */,
 				CB531DBB2C1F6F4F001D4A09 /* Products */,
+				CB531E012C1F801C001D4A09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +157,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		CB531E012C1F801C001D4A09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +180,9 @@
 			dependencies = (
 			);
 			name = Stocks;
+			packageProductDependencies = (
+				CB531E022C1F801C001D4A09 /* Navigation */,
+			);
 			productName = Stocks;
 			productReference = CB531DBA2C1F6F4F001D4A09 /* Stocks.app */;
 			productType = "com.apple.product-type.application";
@@ -550,6 +565,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB531E022C1F801C001D4A09 /* Navigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Navigation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB531DB22C1F6F4F001D4A09 /* Project object */;
 }
