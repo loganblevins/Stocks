@@ -34,4 +34,12 @@ struct Stock: Codable {
     var holdingsPriceCents: Int {
         currentPriceCents * (quantity ?? 0)
     }
+
+    var currentPriceTimeUpdated: String {
+        let date = Date(timeIntervalSince1970: TimeInterval(currentPriceTimestamp))
+        return date.formatted()
+    }
 }
+
+extension Stock: Equatable {}
+extension Stock: Hashable {}

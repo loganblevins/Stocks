@@ -13,3 +13,5 @@
 "DataStoreError.badUrl" = "Oops! Looks like %@ isn't a valid URL";
 "DataStoreError.transport" = "Something isn't right: %@";
 "DataStoreError.unknown" = "Looks like we hit a snag...try again?";
+
+"StockDetail.lastUpdated" = "Last updated at: %@";

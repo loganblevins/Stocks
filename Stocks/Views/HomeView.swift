@@ -11,10 +11,16 @@ import Navigation
 struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
 
+    @StateObject private var router = Router<PortfolioRoutes>()
+
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $router.stack) {
             ContentView()
                 .environmentObject(viewModel)
+                .environmentObject(router)
+                .navigationDestination(for: PortfolioRoutes.self) { destination in
+                    destination.body
+                }
         }
         .onAppear {
             viewModel.fetch()

@@ -25,6 +25,8 @@
 		CB531E0D2C1F8724001D4A09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0C2C1F8724001D4A09 /* HomeView.swift */; };
 		CB531E0F2C1F8A65001D4A09 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0E2C1F8A65001D4A09 /* RowView.swift */; };
 		CB531E112C1F979A001D4A09 /* XCTestCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E102C1F979A001D4A09 /* XCTestCase+.swift */; };
+		CB5663722C1F9E9800769C0B /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5663712C1F9E9800769C0B /* Routes.swift */; };
+		CB5663742C1F9F1500769C0B /* StockDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5663732C1F9F1500769C0B /* StockDetail.swift */; };
 		CBC5FC082C1F9BC700E61998 /* StockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC5FC072C1F9BC700E61998 /* StockTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		CB531E0C2C1F8724001D4A09 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CB531E0E2C1F8A65001D4A09 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		CB531E102C1F979A001D4A09 /* XCTestCase+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+.swift"; sourceTree = "<group>"; };
+		CB5663712C1F9E9800769C0B /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		CB5663732C1F9F1500769C0B /* StockDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetail.swift; sourceTree = "<group>"; };
 		CBC5FC072C1F9BC700E61998 /* StockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +114,7 @@
 				CB531DE82C1F708A001D4A09 /* Views */,
 				CB531DE72C1F7083001D4A09 /* Models */,
 				CB531DBD2C1F6F4F001D4A09 /* StocksApp.swift */,
+				CB5663712C1F9E9800769C0B /* Routes.swift */,
 				CB531DFB2C1F7C81001D4A09 /* L10n.swift */,
 				CB531DF72C1F7B67001D4A09 /* Resources */,
 				CB531DC32C1F6F50001D4A09 /* Preview Content */,
@@ -149,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				CB531DBF2C1F6F4F001D4A09 /* ContentView.swift */,
+				CB5663732C1F9F1500769C0B /* StockDetail.swift */,
 				CB531E0E2C1F8A65001D4A09 /* RowView.swift */,
 				CB531E0C2C1F8724001D4A09 /* HomeView.swift */,
 			);
@@ -294,8 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB531DEC2C1F717E001D4A09 /* Portfolio.swift in Sources */,
+				CB5663722C1F9E9800769C0B /* Routes.swift in Sources */,
 				CB531E0B2C1F8495001D4A09 /* HomeViewModel.swift in Sources */,
 				CB531E092C1F83E0001D4A09 /* MockStore.swift in Sources */,
+				CB5663742C1F9F1500769C0B /* StockDetail.swift in Sources */,
 				CB531E0D2C1F8724001D4A09 /* HomeView.swift in Sources */,
 				CB531DEE2C1F7442001D4A09 /* DataStore.swift in Sources */,
 				CB531DC02C1F6F4F001D4A09 /* ContentView.swift in Sources */,

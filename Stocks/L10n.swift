@@ -37,6 +37,12 @@ internal enum L10n {
       internal static let empty = L10n.tr("Localizable", "HomeView.message.empty", fallback: "Nothing to see here!")
     }
   }
+  internal enum StockDetail {
+    /// Last updated at: %@
+    internal static func lastUpdated(_ p1: Any) -> String {
+      return L10n.tr("Localizable", "StockDetail.lastUpdated", String(describing: p1), fallback: "Last updated at: %@")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

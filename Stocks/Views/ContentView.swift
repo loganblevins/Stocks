@@ -9,7 +9,8 @@ import SwiftUI
 import Navigation
 
 struct ContentView: View {
-    @EnvironmentObject var viewModel: HomeViewModel
+    @EnvironmentObject private var viewModel: HomeViewModel
+    @EnvironmentObject private var router: Router<PortfolioRoutes>
 
     var body: some View {
         if let status = viewModel.status {
@@ -30,7 +31,7 @@ struct ContentView: View {
 
     private var emptyView: some View {
         VStack {
-            Text(L10n.HomeView.Message.empty)
+            Text(.init(L10n.HomeView.Message.empty))
                 .font(.title)
 
             refreshButton
@@ -41,8 +42,11 @@ struct ContentView: View {
     private var populatedView: some View {
         List(viewModel.sortedStocks, id: \.ticker) { stock in
             RowView(stock: stock)
+                .onTapGesture {
+                    router.push(.stockDetail(stock: stock))
+                }
         }
-        .navigationTitle(L10n.HomeView.title)
+        .navigationTitle(.init(L10n.HomeView.title))
     }
 
     private struct ErrorView<Content: View>: View {
