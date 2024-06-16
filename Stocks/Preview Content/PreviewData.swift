@@ -15,7 +15,7 @@ extension Stock {
             name: "Block Inc",
             currency: "USD",
             currentPriceCents: 6215,
-            quantity: nil,
+            quantity: 2,
             currentPriceTimestamp: 1718570022
         )
     }

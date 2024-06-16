@@ -31,9 +31,9 @@ struct HomeView: View {
         viewModel: HomeViewModel(
             dataStore: MockStore(
                 stocks: [
-                    Stock.anyStock(ticker: "SQ"),
-                    Stock.anyStock(ticker: "AAPL"),
-                    Stock.anyStock(ticker: "GOOG")
+                    .anyStock(ticker: "SQ"),
+                    .anyStock(ticker: "AAPL"),
+                    .anyStock(ticker: "GOOG")
                 ]
             )
         )

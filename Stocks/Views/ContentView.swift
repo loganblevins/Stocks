@@ -9,19 +9,64 @@ import SwiftUI
 import Navigation
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: HomeViewModel
+
     var body: some View {
+        if let status = viewModel.status {
+            switch status {
+            case .error(let error):
+                ErrorView(message: error.localizedDescription, content: refreshButton)
+            case .success:
+                if viewModel.sortedStocks.isEmpty {
+                    emptyView
+                } else {
+                    populatedView
+                }
+            }
+        } else {
+            ProgressView()
+        }
+    }
+
+    private var emptyView: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text(L10n.HomeView.Message.empty)
+                .font(.title)
+
+            refreshButton
         }
         .padding()
     }
-}
 
-#if DEBUG
-#Preview {
-    ContentView()
+    private var populatedView: some View {
+        List(viewModel.sortedStocks, id: \.ticker) { stock in
+            RowView(stock: stock)
+        }
+        .navigationTitle(L10n.HomeView.title)
+    }
+
+    private struct ErrorView<Content: View>: View {
+        let message: String
+        let content: Content
+
+        var body: some View {
+            VStack {
+                Text(.init(message))
+                    .font(.title)
+
+                content
+            }
+            .padding()
+        }
+    }
+
+    private var refreshButton: some View {
+        Button {
+            viewModel.fetch()
+        } label: {
+            Text(.init(L10n.HomeView.Button.refresh))
+                .font(.title3)
+        }
+        .buttonStyle(.borderedProminent)
+    }
 }
-#endif

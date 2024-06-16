@@ -23,6 +23,7 @@
 		CB531E092C1F83E0001D4A09 /* MockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E082C1F83E0001D4A09 /* MockStore.swift */; };
 		CB531E0B2C1F8495001D4A09 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0A2C1F8495001D4A09 /* HomeViewModel.swift */; };
 		CB531E0D2C1F8724001D4A09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0C2C1F8724001D4A09 /* HomeView.swift */; };
+		CB531E0F2C1F8A65001D4A09 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0E2C1F8A65001D4A09 /* RowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		CB531E082C1F83E0001D4A09 /* MockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStore.swift; sourceTree = "<group>"; };
 		CB531E0A2C1F8495001D4A09 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CB531E0C2C1F8724001D4A09 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CB531E0E2C1F8A65001D4A09 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				CB531DBF2C1F6F4F001D4A09 /* ContentView.swift */,
+				CB531E0E2C1F8A65001D4A09 /* RowView.swift */,
 				CB531E0C2C1F8724001D4A09 /* HomeView.swift */,
 			);
 			path = Views;
@@ -292,6 +295,7 @@
 				CB531DC02C1F6F4F001D4A09 /* ContentView.swift in Sources */,
 				CB531E052C1F822A001D4A09 /* RemoteStore.swift in Sources */,
 				CB531E072C1F8320001D4A09 /* PreviewData.swift in Sources */,
+				CB531E0F2C1F8A65001D4A09 /* RowView.swift in Sources */,
 				CB531DBE2C1F6F4F001D4A09 /* StocksApp.swift in Sources */,
 				CB531DFC2C1F7C81001D4A09 /* L10n.swift in Sources */,
 			);
