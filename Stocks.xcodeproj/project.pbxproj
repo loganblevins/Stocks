@@ -24,6 +24,7 @@
 		CB531E0B2C1F8495001D4A09 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0A2C1F8495001D4A09 /* HomeViewModel.swift */; };
 		CB531E0D2C1F8724001D4A09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0C2C1F8724001D4A09 /* HomeView.swift */; };
 		CB531E0F2C1F8A65001D4A09 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0E2C1F8A65001D4A09 /* RowView.swift */; };
+		CB531E112C1F979A001D4A09 /* XCTestCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E102C1F979A001D4A09 /* XCTestCase+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		CB531E0A2C1F8495001D4A09 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CB531E0C2C1F8724001D4A09 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CB531E0E2C1F8A65001D4A09 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		CB531E102C1F979A001D4A09 /* XCTestCase+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				CB531DCE2C1F6F50001D4A09 /* StocksTests.swift */,
+				CB531E102C1F979A001D4A09 /* XCTestCase+.swift */,
 			);
 			path = StocksTests;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB531E112C1F979A001D4A09 /* XCTestCase+.swift in Sources */,
 				CB531DCF2C1F6F50001D4A09 /* StocksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
