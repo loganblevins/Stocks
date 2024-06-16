@@ -11,8 +11,14 @@ struct StockDetail: View {
     let stock: Stock
 
     var body: some View {
-        Text(.init(L10n.StockDetail.lastUpdated(stock.currentPriceTimeUpdated)))
-            .navigationTitle(stock.ticker)
+        VStack {
+            Text(stock.currentPriceCents, format: .currency(code: stock.currency).scale(0.01))
+                .font(.title)
+                .bold()
+
+            Text(.init(L10n.StockDetail.lastUpdated(stock.currentPriceTimeUpdated)))
+        }
+        .navigationTitle(stock.ticker)
     }
 }
 
