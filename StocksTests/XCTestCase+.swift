@@ -80,12 +80,4 @@ extension XCTestCase {
 
         return try unwrappedResult.get()
     }
-
-    func anyEmployee(fullName: String = "fullName") -> Employee {
-        Employee(uuid: UUID().uuidString, fullName: fullName, phoneNumber: "phoneNumber", emailAddress: "emailAddress", biography: "biography", photoURLSmall: "photoUrlSmalls", photoURLLarge: "photoUrlLarge", team: "team", employeeType: .fullTime)
-    }
-
-    func anyEmployees(count: Int = 3) -> [Employee] {
-        Array(repeating: anyEmployee(), count: count)
-    }
 }
