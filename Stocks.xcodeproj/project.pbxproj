@@ -21,6 +21,7 @@
 		CB531E052C1F822A001D4A09 /* RemoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E042C1F822A001D4A09 /* RemoteStore.swift */; };
 		CB531E072C1F8320001D4A09 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E062C1F8320001D4A09 /* PreviewData.swift */; };
 		CB531E092C1F83E0001D4A09 /* MockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E082C1F83E0001D4A09 /* MockStore.swift */; };
+		CB531E0B2C1F8495001D4A09 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0A2C1F8495001D4A09 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		CB531E042C1F822A001D4A09 /* RemoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStore.swift; sourceTree = "<group>"; };
 		CB531E062C1F8320001D4A09 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		CB531E082C1F83E0001D4A09 /* MockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStore.swift; sourceTree = "<group>"; };
+		CB531E0A2C1F8495001D4A09 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		CB531DE92C1F7096001D4A09 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CB531E0A2C1F8495001D4A09 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB531DEC2C1F717E001D4A09 /* Portfolio.swift in Sources */,
+				CB531E0B2C1F8495001D4A09 /* HomeViewModel.swift in Sources */,
 				CB531E092C1F83E0001D4A09 /* MockStore.swift in Sources */,
 				CB531DEE2C1F7442001D4A09 /* DataStore.swift in Sources */,
 				CB531DC02C1F6F4F001D4A09 /* ContentView.swift in Sources */,
