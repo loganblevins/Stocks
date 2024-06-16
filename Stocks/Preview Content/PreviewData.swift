@@ -19,4 +19,14 @@ extension Stock {
             currentPriceTimestamp: 1718570022
         )
     }
+
+    static func anyStocks(count: Int = 3) -> [Stock] {
+        Array(repeating: anyStock(ticker: UUID().uuidString), count: count)
+    }
+}
+
+extension [Stock] {
+    static func anyStocks(count: Int = 3) -> [Stock] {
+        Array(repeating: Stock.anyStock(ticker: UUID().uuidString), count: count)
+    }
 }

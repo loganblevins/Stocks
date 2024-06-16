@@ -11,7 +11,7 @@
 		CB531DC02C1F6F4F001D4A09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DBF2C1F6F4F001D4A09 /* ContentView.swift */; };
 		CB531DC22C1F6F50001D4A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB531DC12C1F6F50001D4A09 /* Assets.xcassets */; };
 		CB531DC52C1F6F50001D4A09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB531DC42C1F6F50001D4A09 /* Preview Assets.xcassets */; };
-		CB531DCF2C1F6F50001D4A09 /* StocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DCE2C1F6F50001D4A09 /* StocksTests.swift */; };
+		CB531DCF2C1F6F50001D4A09 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DCE2C1F6F50001D4A09 /* HomeViewModelTests.swift */; };
 		CB531DEC2C1F717E001D4A09 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DEB2C1F717E001D4A09 /* Portfolio.swift */; };
 		CB531DEE2C1F7442001D4A09 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DED2C1F7442001D4A09 /* DataStore.swift */; };
 		CB531DF02C1F74A5001D4A09 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = CB531DEF2C1F74A5001D4A09 /* swiftgen.yml */; };
@@ -44,7 +44,7 @@
 		CB531DC12C1F6F50001D4A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB531DC42C1F6F50001D4A09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB531DCA2C1F6F50001D4A09 /* StocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB531DCE2C1F6F50001D4A09 /* StocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTests.swift; sourceTree = "<group>"; };
+		CB531DCE2C1F6F50001D4A09 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		CB531DEB2C1F717E001D4A09 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		CB531DED2C1F7442001D4A09 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		CB531DEF2C1F74A5001D4A09 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		CB531DCD2C1F6F50001D4A09 /* StocksTests */ = {
 			isa = PBXGroup;
 			children = (
-				CB531DCE2C1F6F50001D4A09 /* StocksTests.swift */,
+				CB531DCE2C1F6F50001D4A09 /* HomeViewModelTests.swift */,
 				CB531E102C1F979A001D4A09 /* XCTestCase+.swift */,
 			);
 			path = StocksTests;
@@ -309,7 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB531E112C1F979A001D4A09 /* XCTestCase+.swift in Sources */,
-				CB531DCF2C1F6F50001D4A09 /* StocksTests.swift in Sources */,
+				CB531DCF2C1F6F50001D4A09 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
