@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-extension PreviewProvider {
-    static func anyStock() -> Stock {
+extension Stock {
+    static func anyStock(ticker: String = "SQ") -> Stock {
         Stock(
-            ticker: "SQ",
+            ticker: ticker,
             name: "Block Inc",
             currency: "USD",
             currentPriceCents: 6215,

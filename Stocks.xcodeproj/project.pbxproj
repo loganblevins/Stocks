@@ -22,6 +22,7 @@
 		CB531E072C1F8320001D4A09 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E062C1F8320001D4A09 /* PreviewData.swift */; };
 		CB531E092C1F83E0001D4A09 /* MockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E082C1F83E0001D4A09 /* MockStore.swift */; };
 		CB531E0B2C1F8495001D4A09 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0A2C1F8495001D4A09 /* HomeViewModel.swift */; };
+		CB531E0D2C1F8724001D4A09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0C2C1F8724001D4A09 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		CB531E062C1F8320001D4A09 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		CB531E082C1F83E0001D4A09 /* MockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStore.swift; sourceTree = "<group>"; };
 		CB531E0A2C1F8495001D4A09 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CB531E0C2C1F8724001D4A09 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,6 @@
 				CB531DE82C1F708A001D4A09 /* Views */,
 				CB531DE72C1F7083001D4A09 /* Models */,
 				CB531DBD2C1F6F4F001D4A09 /* StocksApp.swift */,
-				CB531DBF2C1F6F4F001D4A09 /* ContentView.swift */,
 				CB531DFB2C1F7C81001D4A09 /* L10n.swift */,
 				CB531DF72C1F7B67001D4A09 /* Resources */,
 				CB531DC32C1F6F50001D4A09 /* Preview Content */,
@@ -139,6 +140,8 @@
 		CB531DE82C1F708A001D4A09 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CB531DBF2C1F6F4F001D4A09 /* ContentView.swift */,
+				CB531E0C2C1F8724001D4A09 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				CB531DEC2C1F717E001D4A09 /* Portfolio.swift in Sources */,
 				CB531E0B2C1F8495001D4A09 /* HomeViewModel.swift in Sources */,
 				CB531E092C1F83E0001D4A09 /* MockStore.swift in Sources */,
+				CB531E0D2C1F8724001D4A09 /* HomeView.swift in Sources */,
 				CB531DEE2C1F7442001D4A09 /* DataStore.swift in Sources */,
 				CB531DC02C1F6F4F001D4A09 /* ContentView.swift in Sources */,
 				CB531E052C1F822A001D4A09 /* RemoteStore.swift in Sources */,
