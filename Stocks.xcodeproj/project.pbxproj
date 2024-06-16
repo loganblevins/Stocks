@@ -14,6 +14,7 @@
 		CB531DCF2C1F6F50001D4A09 /* StocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DCE2C1F6F50001D4A09 /* StocksTests.swift */; };
 		CB531DD92C1F6F50001D4A09 /* StocksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DD82C1F6F50001D4A09 /* StocksUITests.swift */; };
 		CB531DDB2C1F6F50001D4A09 /* StocksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DDA2C1F6F50001D4A09 /* StocksUITestsLaunchTests.swift */; };
+		CB531DEC2C1F717E001D4A09 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531DEB2C1F717E001D4A09 /* Portfolio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CB531DD42C1F6F50001D4A09 /* StocksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB531DD82C1F6F50001D4A09 /* StocksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksUITests.swift; sourceTree = "<group>"; };
 		CB531DDA2C1F6F50001D4A09 /* StocksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB531DEB2C1F717E001D4A09 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,10 @@
 		CB531DBC2C1F6F4F001D4A09 /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				CB531DEA2C1F709D001D4A09 /* Services */,
+				CB531DE92C1F7096001D4A09 /* ViewModels */,
+				CB531DE82C1F708A001D4A09 /* Views */,
+				CB531DE72C1F7083001D4A09 /* Models */,
 				CB531DBD2C1F6F4F001D4A09 /* StocksApp.swift */,
 				CB531DBF2C1F6F4F001D4A09 /* ContentView.swift */,
 				CB531DC12C1F6F50001D4A09 /* Assets.xcassets */,
@@ -125,6 +131,35 @@
 				CB531DDA2C1F6F50001D4A09 /* StocksUITestsLaunchTests.swift */,
 			);
 			path = StocksUITests;
+			sourceTree = "<group>";
+		};
+		CB531DE72C1F7083001D4A09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB531DEB2C1F717E001D4A09 /* Portfolio.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB531DE82C1F708A001D4A09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB531DE92C1F7096001D4A09 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB531DEA2C1F709D001D4A09 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB531DEC2C1F717E001D4A09 /* Portfolio.swift in Sources */,
 				CB531DC02C1F6F4F001D4A09 /* ContentView.swift in Sources */,
 				CB531DBE2C1F6F4F001D4A09 /* StocksApp.swift in Sources */,
 			);
@@ -430,6 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,6 +474,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.loganblevins.Stocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,6 +500,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +508,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.loganblevins.Stocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
