@@ -9,13 +9,13 @@ import Foundation
 import SwiftUI
 
 extension Stock {
-    static func anyStock(ticker: String = "SQ") -> Stock {
+    static func anyStock(ticker: String = "SQ", currentPriceCents: Int = 6215, quantity: Int? = nil) -> Stock {
         Stock(
             ticker: ticker,
             name: "Block Inc",
             currency: "USD",
-            currentPriceCents: 6215,
-            quantity: 2,
+            currentPriceCents: currentPriceCents,
+            quantity: quantity,
             currentPriceTimestamp: 1718570022
         )
     }

@@ -25,6 +25,7 @@
 		CB531E0D2C1F8724001D4A09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0C2C1F8724001D4A09 /* HomeView.swift */; };
 		CB531E0F2C1F8A65001D4A09 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E0E2C1F8A65001D4A09 /* RowView.swift */; };
 		CB531E112C1F979A001D4A09 /* XCTestCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB531E102C1F979A001D4A09 /* XCTestCase+.swift */; };
+		CBC5FC082C1F9BC700E61998 /* StockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC5FC072C1F9BC700E61998 /* StockTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		CB531E0C2C1F8724001D4A09 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CB531E0E2C1F8A65001D4A09 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		CB531E102C1F979A001D4A09 /* XCTestCase+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+.swift"; sourceTree = "<group>"; };
+		CBC5FC072C1F9BC700E61998 /* StockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				CB531DCE2C1F6F50001D4A09 /* HomeViewModelTests.swift */,
+				CBC5FC072C1F9BC700E61998 /* StockTests.swift */,
 				CB531E102C1F979A001D4A09 /* XCTestCase+.swift */,
 			);
 			path = StocksTests;
@@ -310,6 +313,7 @@
 			files = (
 				CB531E112C1F979A001D4A09 /* XCTestCase+.swift in Sources */,
 				CB531DCF2C1F6F50001D4A09 /* HomeViewModelTests.swift in Sources */,
+				CBC5FC082C1F9BC700E61998 /* StockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
