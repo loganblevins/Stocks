@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB0A195A2C1FC31200726448 /* Stocks.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Stocks.xctestplan; sourceTree = "<group>"; };
 		CB531DBA2C1F6F4F001D4A09 /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB531DBD2C1F6F4F001D4A09 /* StocksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApp.swift; sourceTree = "<group>"; };
 		CB531DBF2C1F6F4F001D4A09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		CB531DB12C1F6F4F001D4A09 = {
 			isa = PBXGroup;
 			children = (
+				CB0A195A2C1FC31200726448 /* Stocks.xctestplan */,
 				CB531DFD2C1F7FB2001D4A09 /* Navigation */,
 				CB531DEF2C1F74A5001D4A09 /* swiftgen.yml */,
 				CB531DBC2C1F6F4F001D4A09 /* Stocks */,

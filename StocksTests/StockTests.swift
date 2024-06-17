@@ -21,7 +21,13 @@ final class StockTests: XCTestCase {
         XCTAssertEqual(sut.holdingsPriceCents, 200)
     }
 
-    func getSUT(priceCents: Int, quantity: Int? = nil) -> Stock {
+    func test_currentPriceTimeUpdated() {
+        let sut = getSUT()
+
+        XCTAssertEqual(sut.currentPriceTimeUpdated, "6/16/2024, 20:33")
+    }
+
+    func getSUT(priceCents: Int = 1, quantity: Int? = nil) -> Stock {
         .anyStock(currentPriceCents: priceCents, quantity: quantity)
     }
 }
